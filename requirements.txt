@@ -1,0 +1,18 @@
+# HW7: Time-series features + JSONB event-log in PostgreSQL
+# Python >= 3.10. PostgreSQL server (14+, tested on 16) is installed separately
+# (in Colab the first notebook cell does it via apt-get).
+
+# data loading / processing
+pandas>=2.2
+pyarrow>=15.0          # read TLC Parquet files
+
+# PostgreSQL access
+SQLAlchemy>=2.0
+psycopg2-binary>=2.9
+
+# %%sql magic in the notebook
+ipython-sql>=0.5
+prettytable>=3.10      # notebook sets SqlMagic.style = '_DEPRECATED_DEFAULT'
+
+# run the notebook locally (Colab already provides these)
+jupyter>=1.0
